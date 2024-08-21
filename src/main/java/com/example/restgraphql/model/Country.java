@@ -17,6 +17,7 @@ public class Country {
     @JoinColumn(name = "continent_code", nullable = false)
     private Continent continent;
 
+
     // Getters and Setters
     public String getName() {
         return name;
@@ -30,6 +31,12 @@ public class Country {
         return id;
     }
     // Constructors
+    public Country(String name, String currency, Continent continent) {
+        this.name = name;
+        this.currency = currency;
+        this.continent = continent;
+    }
+
     public Country() {
 
     }
