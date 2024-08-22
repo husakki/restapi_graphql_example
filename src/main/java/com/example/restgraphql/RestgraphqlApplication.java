@@ -23,7 +23,7 @@ public class RestgraphqlApplication {
 		return args -> {
 			Continent europe = continentRepo.save(new Continent("EU","Europe"));
 			Continent asia = continentRepo.save(new Continent("AS","ASIA"));
-            Continent america = continentRepo.save(new Continent("NAM","Nord-America"));
+            Continent america = continentRepo.save(new Continent("NAM","North-America"));
 
             countryRepo.saveAll(List.of(
                     new Country("Deutschland","Euro", europe),
